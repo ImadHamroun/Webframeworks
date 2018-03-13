@@ -1,0 +1,29 @@
+<div class="card" >
+  <div class="card-header">Openbare Wifi</div>
+  <div class="card-block">
+      <table class="table table-hover">
+          <thead>
+              <tr>
+                  <th>Wifi ID</th>
+                  <th>Klant</th>
+                  <th>Stad graties wifi</th>
+                  <th>Lattitude</th>
+                  <th>Longtitude</th>
+                  <th>Gemeente</th>
+                  
+              </tr>
+          </thead>
+          <tbody>
+              <!--AIzaSyD1gVH4Sn1QZq5oLmlB8zuCWWGmH3QYnzw-->
+              <tr onclick="" *ngFor="let date of Results.data" >
+                  <td>{{date.id_wifi}}</td>
+                  <td>{{date.klant}}</td>
+                  <td>{{date.stad_gratis_wifi}}</td>
+                  <td>{{date.point_lat}}</td>
+                  <td>{{date.point_lng}}</td>
+                  <td>{{date.gemeente }}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>

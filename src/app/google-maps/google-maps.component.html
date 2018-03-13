@@ -1,0 +1,46 @@
+
+  <h1>Klik op de marker voor info</h1>
+
+    <div class="container">
+    
+    
+     
+
+  
+
+      <agm-map [latitude]="latitude[0]" [longitude]="longitude[0]"  [zoom]="zoom">
+       <agm-marker (markerClick)="Seble(i)" *ngFor="let index of latitude; let i = index"  [latitude]="latitude[i]" [longitude]="longitude[i]"></agm-marker>
+      </agm-map>
+      
+    
+
+  
+
+    <div class="card" >
+      <div class="card-header">Klik op de marker</div>
+      <div class="card-block">
+          <table class="table table-hover">
+              <thead>
+                  <tr>
+                      <th>Wifi ID</th>
+                      <th>Lattitude</th>
+                      <th>Longtitude</th>
+                      
+                      
+                  </tr>
+              </thead>
+              <tbody>
+                  <!--AIzaSyD1gVH4Sn1QZq5oLmlB8zuCWWGmH3QYnzw-->
+                  <tr >
+                      <td>{{formatted_address}}</td>
+                      <td>{{la}}</td>
+                      <td>{{lo}}</td>
+                      
+                      
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+    </div>
+    
+    
